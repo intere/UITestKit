@@ -1,0 +1,16 @@
+PODS:
+  - UITestKit (0.1.0)
+
+DEPENDENCIES:
+  - UITestKit (from `../`)
+
+EXTERNAL SOURCES:
+  UITestKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  UITestKit: fbbd4209b822d847a4a847a674cd2d2792567acd
+
+PODFILE CHECKSUM: 5a665184f239906e95888ebd5c7a264ea43711e6
+
+COCOAPODS: 1.3.1

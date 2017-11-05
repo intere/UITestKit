@@ -1,12 +1,12 @@
 use_frameworks!
+platform :ios, '9.3'
+
 
 target 'UITestKit_Example' do
-  pod 'UITestKit', :path => '../'
 
-  target 'UITestKit_Tests' do
+  target 'UITestKit_ExampleTests' do
     inherit! :search_paths
+    pod 'UITestKit', :path => '../'
 
-    pod 'Quick', '~> 1.2.0'
-  pod 'Nimble', '~> 7.0.2'
   end
 end

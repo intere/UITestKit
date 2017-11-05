@@ -1,25 +1,101 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dv6-dh-Fwx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Square-->
+        <scene sceneID="AVN-Io-7El">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SquareTabVC" id="fv2-xT-BfM" customClass="SquareTabVC" customModule="UITestKit_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="xXf-pX-vFh"/>
+                        <viewControllerLayoutGuide type="bottom" id="uCM-N6-oaE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <view key="view" contentMode="scaleToFill" id="MUk-6a-1c5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Square" translatesAutoresizingMaskIntoConstraints="NO" id="om2-0n-6cx">
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="ccJ-gU-tAD"/>
+                                    <constraint firstAttribute="height" constant="300" id="t5B-tr-TvM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="om2-0n-6cx" firstAttribute="centerX" secondItem="MUk-6a-1c5" secondAttribute="centerX" id="FWN-gt-jkk"/>
+                            <constraint firstItem="om2-0n-6cx" firstAttribute="centerY" secondItem="MUk-6a-1c5" secondAttribute="centerY" id="k32-g5-GB1"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Square" image="tab2" id="CAm-xd-shF"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lgp-Qa-SEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="878" y="415"/>
+        </scene>
+        <!--Circle-->
+        <scene sceneID="HYR-B8-6lX">
+            <objects>
+                <viewController storyboardIdentifier="CircleTabVC" id="nFg-oO-xGj" customClass="CircleTabVC" customModule="UITestKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H10-5i-a3s"/>
+                        <viewControllerLayoutGuide type="bottom" id="nAT-66-7Ff"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gd3-Io-6pk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle" translatesAutoresizingMaskIntoConstraints="NO" id="O4m-fD-DMt">
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Hpi-9A-ghh"/>
+                                    <constraint firstAttribute="width" constant="300" id="Uho-CL-cEB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O4m-fD-DMt" firstAttribute="centerY" secondItem="gd3-Io-6pk" secondAttribute="centerY" id="Jvm-f0-Z6n"/>
+                            <constraint firstItem="O4m-fD-DMt" firstAttribute="centerX" secondItem="gd3-Io-6pk" secondAttribute="centerX" id="Tzk-KJ-oKz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Circle" image="tab1" id="POJ-TX-RMb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B6G-NS-kaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877.60000000000002" y="-250.52473763118442"/>
+        </scene>
+        <!--TabBarVC-->
+        <scene sceneID="8TI-7b-awd">
+            <objects>
+                <tabBarController storyboardIdentifier="MyTabBarVC" title="TabBarVC" id="dv6-dh-Fwx" customClass="MyTabBarVC" customModule="UITestKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cyw-Pt-hpA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nFg-oO-xGj" kind="relationship" relationship="viewControllers" id="TIN-Q9-sKf"/>
+                        <segue destination="fv2-xT-BfM" kind="relationship" relationship="viewControllers" id="zYg-d5-x0R"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fB-wP-aBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-74" y="83"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Circle" width="300" height="300"/>
+        <image name="Square" width="300" height="300"/>
+        <image name="tab1" width="32" height="32"/>
+        <image name="tab2" width="32" height="32"/>
+    </resources>
 </document>

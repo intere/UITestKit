@@ -1,0 +1,6 @@
+framework module UITestKit {
+  umbrella header "UITestKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
