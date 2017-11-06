@@ -1,3 +1,6 @@
+
+<img src="https://github.com/intere/UITestKit/blob/master/Example/UITestKit/Media.xcassets/AppLogo.imageset/AppLogo.png?raw=true" width="150">
+
 # UITestKit
 
 [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=59ff8aff29029e0001a5a77b&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/59ff8aff29029e0001a5a77b/build/latest?branch=master)
