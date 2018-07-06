@@ -1,14 +1,11 @@
 #
-# Be sure to run `pod lib lint UITestKit.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
+# Lint this before submitting:
+# `pod lib lint --allow-warnings UITestKit.podspec`
 #
 
 Pod::Spec.new do |s|
   s.name             = 'UITestKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Programmatic UI Tests (not using the Apple UI Test Framework).  XCTest-based tests.'
 
 # This description is used to generate tags and improve search results.
@@ -30,23 +27,14 @@ principle.
                        DESC
 
   s.homepage         = 'https://github.com/intere/UITestKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Eric Internicola' => 'intere@gmail.com' }
   s.source           = { :git => 'https://github.com/intere/UITestKit.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/intere'
 
-  s.ios.deployment_target = '9.3'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'UITestKit/**/*'
-
-  # s.resource_bundles = {
-  #   'UITestKit' => ['UITestKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
   s.frameworks = 'XCTest'
 
 end
