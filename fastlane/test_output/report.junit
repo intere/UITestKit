@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='UITestKit_ExampleTests.xctest' tests='3' failures='0'>
-  <testsuite name='UITestKit_ExampleTests.UITestKit_ExampleTests' tests='3' failures='0'>
-    <testcase classname='UITestKit_ExampleTests.UITestKit_ExampleTests' name='testOpenCircleTab' time='1.215'/>
-    <testcase classname='UITestKit_ExampleTests.UITestKit_ExampleTests' name='testOpenSafariVC' time='2.709'/>
-    <testcase classname='UITestKit_ExampleTests.UITestKit_ExampleTests' name='testOpenSquareTab' time='1.039'/>
-  </testsuite>
-</testsuites>
