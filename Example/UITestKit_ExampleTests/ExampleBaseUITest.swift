@@ -10,7 +10,7 @@
 import UITestKit
 import XCTest
 
-class ExampleBaeUITest: UITestKitBase {
+class ExampleBaseUITest: UITestKitBase {
 
     /// Gets you the
     var myTabBarVC: MyTabBarVC? {
@@ -29,7 +29,7 @@ class ExampleBaeUITest: UITestKitBase {
 
 // MARK: - API
 
-extension ExampleBaeUITest {
+extension ExampleBaseUITest {
 
     @discardableResult
     /// Opens the Circle Tab.
