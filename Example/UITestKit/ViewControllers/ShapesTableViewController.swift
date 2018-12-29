@@ -46,7 +46,7 @@ class ShapesTableViewController: UITableViewController {
 
 // MARK: - User Actions
 
-private extension ShapesTableViewController {
+extension ShapesTableViewController {
 
     @IBAction
     func addShape(_ source: UIBarButtonItem) {
@@ -55,7 +55,7 @@ private extension ShapesTableViewController {
         }
         shapes.append(Shape.allCases[shapes.count])
         tableView.reloadData()
-        tableView.scrollToRow(at: IndexPath(row: shapes.count-1, section: 0), at: .bottom, animated: true)
+        tableView.scrollToRow(at: IndexPath(row: shapes.count-1, section: 0), at: .bottom, animated: UIView.areAnimationsEnabled)
 
         if shapes.count == Shape.allCases.count {
             source.isEnabled = false

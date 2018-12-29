@@ -15,6 +15,7 @@
 		366D4B671FAFB51B0060A0C1 /* SquareTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366D4B661FAFB51B0060A0C1 /* SquareTabVC.swift */; };
 		366D4B691FAFB7970060A0C1 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366D4B681FAFB7970060A0C1 /* Media.xcassets */; };
 		366D4B6B1FAFB9BD0060A0C1 /* ExampleBaseUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366D4B6A1FAFB9BD0060A0C1 /* ExampleBaseUITest.swift */; };
+		36B91C9521D7F623003D1804 /* ShapeTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B91C9421D7F623003D1804 /* ShapeTableTests.swift */; };
 		36D9F1CF21D7D88A00F70AB9 /* ShapesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D9F1CE21D7D88A00F70AB9 /* ShapesTableViewController.swift */; };
 		36D9F1D221D7D8BA00F70AB9 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D9F1D121D7D8BA00F70AB9 /* Shape.swift */; };
 		36D9F1D521D7D9B300F70AB9 /* ShapeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D9F1D421D7D9B300F70AB9 /* ShapeTableViewCell.swift */; };
@@ -45,6 +46,7 @@
 		366D4B661FAFB51B0060A0C1 /* SquareTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareTabVC.swift; sourceTree = "<group>"; };
 		366D4B681FAFB7970060A0C1 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		366D4B6A1FAFB9BD0060A0C1 /* ExampleBaseUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleBaseUITest.swift; sourceTree = "<group>"; };
+		36B91C9421D7F623003D1804 /* ShapeTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeTableTests.swift; sourceTree = "<group>"; };
 		36D9F1CE21D7D88A00F70AB9 /* ShapesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesTableViewController.swift; sourceTree = "<group>"; };
 		36D9F1D121D7D8BA00F70AB9 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		36D9F1D421D7D9B300F70AB9 /* ShapeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeTableViewCell.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				366D4B571FAFB02D0060A0C1 /* Info.plist */,
 				366D4B6A1FAFB9BD0060A0C1 /* ExampleBaseUITest.swift */,
 				36D9F1D621D7DC1C00F70AB9 /* ShapeTests.swift */,
+				36B91C9421D7F623003D1804 /* ShapeTableTests.swift */,
 			);
 			path = UITestKit_ExampleTests;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36B91C9521D7F623003D1804 /* ShapeTableTests.swift in Sources */,
 				36D9F1D721D7DC1C00F70AB9 /* ShapeTests.swift in Sources */,
 				366D4B561FAFB02D0060A0C1 /* UITestKit_ExampleTests.swift in Sources */,
 				366D4B6B1FAFB9BD0060A0C1 /* ExampleBaseUITest.swift in Sources */,
