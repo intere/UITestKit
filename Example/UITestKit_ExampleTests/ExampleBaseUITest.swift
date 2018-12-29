@@ -12,15 +12,17 @@ import XCTest
 
 class ExampleBaseUITest: UITestKitBase {
 
-    /// Gets you the
+    /// Gets you the `MyTabBarVC` if it's visible
     var myTabBarVC: MyTabBarVC? {
         return tabBarVC as? MyTabBarVC
     }
 
+    /// Gets you the `CircleTabVC` if it's the topVC
     var circleTabVC: CircleTabVC? {
         return topVC as? CircleTabVC
     }
 
+    /// Gets you the `SquareTabVC` if it's the topVC
     var squareTabVC: SquareTabVC? {
         return topVC as? SquareTabVC
     }
