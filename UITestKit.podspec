@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UITestKit'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Programmatic UI Tests (not using the Apple UI Test Framework).  XCTest-based tests.'
 
 # This description is used to generate tags and improve search results.
