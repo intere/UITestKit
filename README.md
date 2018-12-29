@@ -16,7 +16,7 @@
 - Example App to demonstrate capabilities
 
 [![Build Status](https://travis-ci.org/intere/UITestKit.svg?branch=develop)](https://travis-ci.org/intere/UITestKit)
-[![Documentation](https://cdn.rawgit.com/intere/UITestKit/master/docs/badge.svg)](https://intere.github.io/UITestKit/docs/index.html)
+[![Documentation](https://intere.github.io/UITestKit/badge.svg)](https://intere.github.io/UITestKit/index.html)
 [![Platform](https://img.shields.io/badge/Platforms-iOS-lightgray.svg?style=flat)](http://cocoadocs.org/docsets/UITestKit)
 [![CocoaPods](https://img.shields.io/cocoapods/v/UITestKit.svg)](https://cocoapods.org/pods/UITestKit)  
  [![CocoaPods](https://img.shields.io/cocoapods/dt/UITestKit.svg)](https://cocoapods.org/pods/UITestKit) [![CocoaPods](https://img.shields.io/cocoapods/dm/UITestKit.svg)](https://cocoapods.org/pods/UITestKit)
@@ -49,7 +49,38 @@ pod 'UITestKit'
 
 ```swift
 ///
+override func setUp() {
+    super.setUp()
+    // Don't show view transitions - this will help prevent timing related failures
+    disableAnimations()
+    // pause when pauseForUIDebug() is called
+    shouldPauseUI = true
+    // how long to pause for when pauseForUIDebug() is called
+    pauseTimer = 0.3
 
+    // Now do other setup tasks
+}
+```
+
+```swift
+XCTAssertTrue(waitForCondition({ self.mainVC != nil }, timeout: 3), topVCScreenshot)
+pauseForUIDebug()
+mainVC?.loadEmailLoginScreen()
+
+XCTAssertTrue(waitForCondition({ self.signInVC != nil}, timeout: 1), topVCScreenshot)
+pauseForUIDebug()
+
+if let emailText = signInVC?.emailText {
+    emailText.text = "user@domain.com"
+    pauseForUIDebug()
+}
+
+if let passwordText = signInVC?.passwordText {
+    passwordText.text = "UserPassword"
+    pauseForUIDebug()
+}
+
+// ...
 ```
 
 ### Best Practices

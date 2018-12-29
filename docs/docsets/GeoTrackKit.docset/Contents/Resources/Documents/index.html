@@ -78,7 +78,7 @@
 </ul>
 
 <p><a href="https://travis-ci.org/intere/UITestKit"><img src="https://travis-ci.org/intere/UITestKit.svg?branch=develop" alt="Build Status"></a>
-<a href="https://intere.github.io/UITestKit/docs/index.html"><img src="https://cdn.rawgit.com/intere/UITestKit/master/docs/badge.svg" alt="Documentation"></a>
+<a href="https://intere.github.io/UITestKit/index.html"><img src="https://intere.github.io/UITestKit/badge.svg" alt="Documentation"></a>
 <a href="http://cocoadocs.org/docsets/UITestKit"><img src="https://img.shields.io/badge/Platforms-iOS-lightgray.svg?style=flat" alt="Platform"></a>
 <a href="https://cocoapods.org/pods/UITestKit"><img src="https://img.shields.io/cocoapods/v/UITestKit.svg" alt="CocoaPods"></a><br>
  <a href="https://cocoapods.org/pods/UITestKit"><img src="https://img.shields.io/cocoapods/dt/UITestKit.svg" alt="CocoaPods"></a> <a href="https://cocoapods.org/pods/UITestKit"><img src="https://img.shields.io/cocoapods/dm/UITestKit.svg" alt="CocoaPods"></a></p>
@@ -112,7 +112,36 @@ it, simply add the following line to your Podfile:</p>
 </code></pre>
 <h3 id='code-examples' class='heading'>Code Examples</h3>
 <pre class="highlight swift"><code><span class="c1">///</span>
+<span class="k">override</span> <span class="kd">func</span> <span class="nf">setUp</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">super</span><span class="o">.</span><span class="nf">setUp</span><span class="p">()</span>
+    <span class="c1">// Don't show view transitions - this will help prevent timing related failures</span>
+    <span class="nf">disableAnimations</span><span class="p">()</span>
+    <span class="c1">// pause when pauseForUIDebug() is called</span>
+    <span class="n">shouldPauseUI</span> <span class="o">=</span> <span class="kc">true</span>
+    <span class="c1">// how long to pause for when pauseForUIDebug() is called</span>
+    <span class="n">pauseTimer</span> <span class="o">=</span> <span class="mf">0.3</span>
 
+    <span class="c1">// Now do other setup tasks</span>
+<span class="p">}</span>
+</code></pre>
+<pre class="highlight swift"><code><span class="kt">XCTAssertTrue</span><span class="p">(</span><span class="nf">waitForCondition</span><span class="p">({</span> <span class="k">self</span><span class="o">.</span><span class="n">mainVC</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">},</span> <span class="nv">timeout</span><span class="p">:</span> <span class="mi">3</span><span class="p">),</span> <span class="n">topVCScreenshot</span><span class="p">)</span>
+<span class="nf">pauseForUIDebug</span><span class="p">()</span>
+<span class="n">mainVC</span><span class="p">?</span><span class="o">.</span><span class="nf">loadEmailLoginScreen</span><span class="p">()</span>
+
+<span class="kt">XCTAssertTrue</span><span class="p">(</span><span class="nf">waitForCondition</span><span class="p">({</span> <span class="k">self</span><span class="o">.</span><span class="n">signInVC</span> <span class="o">!=</span> <span class="kc">nil</span><span class="p">},</span> <span class="nv">timeout</span><span class="p">:</span> <span class="mi">1</span><span class="p">),</span> <span class="n">topVCScreenshot</span><span class="p">)</span>
+<span class="nf">pauseForUIDebug</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="k">let</span> <span class="nv">emailText</span> <span class="o">=</span> <span class="n">signInVC</span><span class="p">?</span><span class="o">.</span><span class="n">emailText</span> <span class="p">{</span>
+    <span class="n">emailText</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">"user@domain.com"</span>
+    <span class="nf">pauseForUIDebug</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="k">let</span> <span class="nv">passwordText</span> <span class="o">=</span> <span class="n">signInVC</span><span class="p">?</span><span class="o">.</span><span class="n">passwordText</span> <span class="p">{</span>
+    <span class="n">passwordText</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">"UserPassword"</span>
+    <span class="nf">pauseForUIDebug</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="c1">// ...</span>
 </code></pre>
 <h3 id='best-practices' class='heading'>Best Practices</h3>
 
