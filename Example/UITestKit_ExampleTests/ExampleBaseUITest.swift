@@ -10,26 +10,33 @@
 import UITestKit
 import XCTest
 
-class ExampleBaeUITest: UITestKitBase {
+class ExampleBaseUITest: UITestKitBase {
 
-    /// Gets you the
+    /// Gets you the `MyTabBarVC` if it's visible
     var myTabBarVC: MyTabBarVC? {
         return tabBarVC as? MyTabBarVC
     }
 
+    /// Gets you the `CircleTabVC` if it's the topVC
     var circleTabVC: CircleTabVC? {
         return topVC as? CircleTabVC
     }
 
+    /// Gets you the `SquareTabVC` if it's the topVC
     var squareTabVC: SquareTabVC? {
         return topVC as? SquareTabVC
+    }
+
+    /// Gets the `ShapesTableViewController`
+    var shapeTableVC: ShapesTableViewController? {
+        return topVC as? ShapesTableViewController
     }
 
 }
 
 // MARK: - API
 
-extension ExampleBaeUITest {
+extension ExampleBaseUITest {
 
     @discardableResult
     /// Opens the Circle Tab.
@@ -37,15 +44,12 @@ extension ExampleBaeUITest {
     /// - Returns: The CircleTab if we were able to open it.
     func openCircleTab() -> CircleTabVC? {
         guard let myTabBarVC = myTabBarVC else {
-            XCTFail("Failed to load the MyTabBarVC, we got \(topVCType) instead")
+            XCTFail(topVCScreenshot)
             return nil
         }
 
         myTabBarVC.selectedIndex = 0
-
-        XCTAssertTrue(waitForCondition({
-            self.circleTabVC != nil
-        }, timeout: 10), "CircleTabVC failed to open, it was \(topVCType)")
+        XCTAssertTrue(waitForCondition({ self.circleTabVC != nil }, timeout: 10), topVCScreenshot)
 
         return circleTabVC
     }
@@ -56,17 +60,30 @@ extension ExampleBaeUITest {
     /// - Returns: The SquareTab if we were able to open it.
     func openSquareTab() -> SquareTabVC? {
         guard let myTabBarVC = myTabBarVC else {
-            XCTFail("Failed to load the MyTabBarVC, we got \(topVCType) instead")
+            XCTFail(topVCScreenshot)
             return nil
         }
 
         myTabBarVC.selectedIndex = 1
-
-        XCTAssertTrue(waitForCondition({
-            self.squareTabVC != nil
-        }, timeout: 10), "SquareTabVC failed to open, it was \(topVCType)")
+        XCTAssertTrue(waitForCondition({ self.squareTabVC != nil }, timeout: 10), topVCScreenshot)
 
         return squareTabVC
+    }
+
+    @discardableResult
+    /// Opens the shape tab and hands you back the VC.
+    ///
+    /// - Returns: The `ShapesTableViewController`
+    func openShapeTab() -> ShapesTableViewController? {
+        guard let myTabBarVC = myTabBarVC else {
+            XCTFail(topVCScreenshot)
+            return nil
+        }
+
+        myTabBarVC.selectedIndex = 2
+        XCTAssertTrue(waitForCondition({ self.shapeTableVC != nil}, timeout: 10), topVCScreenshot)
+
+        return shapeTableVC
     }
 
 }

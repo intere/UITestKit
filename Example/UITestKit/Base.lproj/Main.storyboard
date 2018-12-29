@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dv6-dh-Fwx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dv6-dh-Fwx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Square" translatesAutoresizingMaskIntoConstraints="NO" id="om2-0n-6cx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="large_Square" translatesAutoresizingMaskIntoConstraints="NO" id="om2-0n-6cx">
                                 <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="ccJ-gU-tAD"/>
@@ -53,7 +53,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle" translatesAutoresizingMaskIntoConstraints="NO" id="O4m-fD-DMt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="large_circle" translatesAutoresizingMaskIntoConstraints="NO" id="O4m-fD-DMt">
                                 <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="Hpi-9A-ghh"/>
@@ -73,6 +73,41 @@
             </objects>
             <point key="canvasLocation" x="877.60000000000002" y="-250.52473763118442"/>
         </scene>
+        <!--Shapes Table View Controller-->
+        <scene sceneID="CiD-qi-P5r">
+            <objects>
+                <tableViewController id="LMY-Jj-wj9" customClass="ShapesTableViewController" customModule="UITestKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8tl-nc-q7K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="NGZ-xM-O6W">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NGZ-xM-O6W" id="SHi-6X-gUI">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LMY-Jj-wj9" id="Wfo-Yn-BzK"/>
+                            <outlet property="delegate" destination="LMY-Jj-wj9" id="cGl-LM-4s2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="8io-kA-Rj3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3cB-1h-TBX">
+                            <connections>
+                                <action selector="addShape:" destination="LMY-Jj-wj9" id="oeP-cr-sz4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6a-eM-IhQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1816.8" y="1124.8875562218891"/>
+        </scene>
         <!--TabBarVC-->
         <scene sceneID="8TI-7b-awd">
             <objects>
@@ -85,17 +120,38 @@
                     <connections>
                         <segue destination="nFg-oO-xGj" kind="relationship" relationship="viewControllers" id="TIN-Q9-sKf"/>
                         <segue destination="fv2-xT-BfM" kind="relationship" relationship="viewControllers" id="zYg-d5-x0R"/>
+                        <segue destination="U8L-ea-Yto" kind="relationship" relationship="viewControllers" id="kQU-qe-2hR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4fB-wP-aBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-74" y="83"/>
+            <point key="canvasLocation" x="-679" y="626"/>
+        </scene>
+        <!--Shape Table-->
+        <scene sceneID="0t2-tE-ZQT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U8L-ea-Yto" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Shape Table" image="tab3" id="aPW-Jn-EhQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VmK-CN-7oC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LMY-Jj-wj9" kind="relationship" relationship="rootViewController" id="1yT-Kd-Zi4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sk2-EY-ndd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877.60000000000002" y="1124.8875562218891"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Circle" width="300" height="300"/>
-        <image name="Square" width="300" height="300"/>
+        <image name="large_Square" width="300" height="300"/>
+        <image name="large_circle" width="300" height="300"/>
         <image name="tab1" width="32" height="32"/>
         <image name="tab2" width="32" height="32"/>
+        <image name="tab3" width="32" height="32"/>
     </resources>
 </document>

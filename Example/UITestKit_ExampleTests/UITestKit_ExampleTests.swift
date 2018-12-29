@@ -10,17 +10,19 @@ import SafariServices
 import UITestKit
 import XCTest
 
-class UITestKit_ExampleTests: ExampleBaeUITest {
+class UITestKit_ExampleTests: ExampleBaseUITest {
     
     override func setUp() {
         super.setUp()
+        shouldPauseUI = true
+        pauseTimer = 1
+
         XCTAssertNotNil(myTabBarVC, "We couldn't find the root tab view")
     }
     
     override func tearDown() {
-        super.tearDown()
-
         openCircleTab()
+        super.tearDown()
     }
     
 }
@@ -30,17 +32,17 @@ class UITestKit_ExampleTests: ExampleBaeUITest {
 extension UITestKit_ExampleTests {
 
     func testOpenCircleTab() {
-        XCTAssertNotNil(openCircleTab(), "Failed to open the Circle Tab.  We're at the \(topVCType)")
+        XCTAssertNotNil(openCircleTab(), topVCScreenshot)
 
         // Pause, long enough to see it
-        waitForDuration(1)
+        pauseForUIDebug()
     }
 
     func testOpenSquareTab() {
-        XCTAssertNotNil(openSquareTab(), "Failed to open the Square Tab.  We're at the \(topVCType)")
+        XCTAssertNotNil(openSquareTab(), topVCScreenshot)
 
         // Pause, long enough to see it
-        waitForDuration(1)
+        pauseForUIDebug()
     }
 
 }
@@ -53,17 +55,12 @@ extension UITestKit_ExampleTests {
 
         topVC?.present(SFSafariViewController(url: URL(string: "https://www.google.com")!), animated: true, completion: nil)
 
-        XCTAssertTrue(waitForCondition({
-            self.topVC is SFSafariViewController
-        }, timeout: 5), "We didn't load an SFSafariViewController, instead it was a \(topVCType)")
-
-        waitForDuration(2)
+        XCTAssertTrue(waitForCondition({ self.topVC is SFSafariViewController }, timeout: 1), topVCScreenshot)
+        pauseForUIDebug()
 
         (topVC as? SFSafariViewController)?.dismiss(animated: true, completion: nil)
 
-        XCTAssertTrue(waitForCondition({
-            !(self.topVC is SFSafariViewController)
-        }, timeout: 5), "The SFSafariVC didn't dismiss")
+        XCTAssertTrue(waitForCondition({ !(self.topVC is SFSafariViewController) }, timeout: 1), "The SFSafariVC didn't dismiss")
 
     }
 

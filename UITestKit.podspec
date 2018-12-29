@@ -33,6 +33,7 @@ principle.
   s.social_media_url = 'https://twitter.com/intere'
 
   s.ios.deployment_target = '9.0'
+  s.swift_version = '4.2'
 
   s.source_files = 'UITestKit/**/*'
   s.frameworks = 'XCTest'
