@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UITestKitBase Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/UITestKitBase" class="dashAnchor"></a>
+    <a title="UITestKitBase Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">GeoTrackKit Docs</a> (94% documented)</p>
+        <p class="header-right"><a href="https://github.com/intere/UITestKit"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">GeoTrackKit Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        UITestKitBase Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/TestKitBase.html">TestKitBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UITestKitBase.html">UITestKitBase</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/CALayer.html">CALayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIApplication.html">UIApplication</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>UITestKitBase</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">UITestKitBase</span> <span class="p">:</span> <span class="kt"><a href="../Classes/TestKitBase.html">TestKitBase</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UITestKit@objc(cs)UITestKitBase(py)shouldPauseUI"></a>
+                    <a name="//apple_ref/swift/Property/shouldPauseUI" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UITestKit@objc(cs)UITestKitBase(py)shouldPauseUI">shouldPauseUI</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Should the <code>pauseForUIDebug</code> function actually pause?
+This variable is useful for when you want to watch a UI Run</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">shouldPauseUI</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UITestKit@objc(cs)UITestKitBase(py)pauseTimer"></a>
+                    <a name="//apple_ref/swift/Property/pauseTimer" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UITestKit@objc(cs)UITestKitBase(py)pauseTimer">pauseTimer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If <code><a href="../Classes/UITestKitBase.html#/c:@M@UITestKit@objc(cs)UITestKitBase(py)shouldPauseUI">shouldPauseUI</a></code> is enabled, this is how long a <code><a href="../Classes/UITestKitBase.html#/c:@M@UITestKit@objc(cs)UITestKitBase(im)pauseForUIDebug">pauseForUIDebug()</a></code> call lasts (in seconds).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">pauseTimer</span><span class="p">:</span> <span class="kt">TimeInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UITestKit@objc(cs)UITestKitBase(im)pauseForUIDebug"></a>
+                    <a name="//apple_ref/swift/Method/pauseForUIDebug()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UITestKit@objc(cs)UITestKitBase(im)pauseForUIDebug">pauseForUIDebug()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>if <code>pauseForUIDebug</code> is enabled, then this will pause for <code><a href="../Classes/UITestKitBase.html#/c:@M@UITestKit@objc(cs)UITestKitBase(py)pauseTimer">pauseTimer</a></code> seconds
+if not, then it is a no-op.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">pauseForUIDebug</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UITestKit@objc(cs)UITestKitBase(py)topVCType"></a>
+                    <a name="//apple_ref/swift/Property/topVCType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UITestKit@objc(cs)UITestKitBase(py)topVCType">topVCType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells you the type of the top ViewController</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">topVCType</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UITestKit@objc(cs)UITestKitBase(py)topVC"></a>
+                    <a name="//apple_ref/swift/Property/topVC" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UITestKit@objc(cs)UITestKitBase(py)topVC">topVC</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets you the VC that is the currently visible VC (top)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">topVC</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UITestKit@objc(cs)UITestKitBase(py)topVCScreenshot"></a>
+                    <a name="//apple_ref/swift/Property/topVCScreenshot" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UITestKit@objc(cs)UITestKitBase(py)topVCScreenshot">topVCScreenshot</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Takes a screenshot and returns the filename that it wrote to (which contains the topVCType)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">topVCScreenshot</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UITestKit@objc(cs)UITestKitBase(py)tabBarVC"></a>
+                    <a name="//apple_ref/swift/Property/tabBarVC" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UITestKit@objc(cs)UITestKitBase(py)tabBarVC">tabBarVC</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets you a reference to the TabBarVC for the app (so you can set
+what tab is visible, get the currently presented VC, etc)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">tabBarVC</span><span class="p">:</span> <span class="kt">UITabBarController</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UITestKit@objc(cs)UITestKitBase(cpy)topVC"></a>
+                    <a name="//apple_ref/swift/Variable/topVC" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UITestKit@objc(cs)UITestKitBase(cpy)topVC">topVC</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets you the VC that is the currently visible VC (top)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="k">var</span> <span class="nv">topVC</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UITestKit@objc(cs)UITestKitBase(cm)getVisibleViewController:"></a>
+                    <a name="//apple_ref/swift/Method/getVisibleViewController(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UITestKit@objc(cs)UITestKitBase(cm)getVisibleViewController:">getVisibleViewController(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Traverses the provided <code>rootViewController</code> to find the currently visible view controller.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">getVisibleViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">rootViewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">?</span> <span class="o">=</span> <span class="kt">UIApplication</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">keyWindow</span><span class="p">?</span><span class="o">.</span><span class="n">rootViewController</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rootViewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The root Viewcontroller to search.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The currently visible ViewController if it could be determined.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UITestKit@objc(cs)UITestKitBase(im)disableAnimations"></a>
+                    <a name="//apple_ref/swift/Method/disableAnimations()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UITestKit@objc(cs)UITestKitBase(im)disableAnimations">disableAnimations()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disables UI Animations</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">disableAnimations</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UITestKit@objc(cs)UITestKitBase(im)enableAnimations"></a>
+                    <a name="//apple_ref/swift/Method/enableAnimations()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UITestKit@objc(cs)UITestKitBase(im)enableAnimations">enableAnimations()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enables UI Animations</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">enableAnimations</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UITestKit@objc(cs)UITestKitBase(im)presentModallyWithViewController:"></a>
+                    <a name="//apple_ref/swift/Method/presentModally(viewController:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UITestKit@objc(cs)UITestKitBase(im)presentModallyWithViewController:">presentModally(viewController:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Modally presents the provided view controller (without animations).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">presentModally</span><span class="p">(</span><span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>viewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view controller you want to present.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2017-2018 <a class="link" href="http://intere.github.io" target="_blank" rel="external">Eric Internicola</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

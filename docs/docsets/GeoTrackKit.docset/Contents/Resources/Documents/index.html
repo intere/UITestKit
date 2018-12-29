@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GeoTrackKit  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="GeoTrackKit  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">GeoTrackKit Docs</a> (94% documented)</p>
+        <p class="header-right"><a href="https://github.com/intere/UITestKit"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">GeoTrackKit Reference</a>
+        <img id="carat" src="img/carat.png" />
+        GeoTrackKit  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/TestKitBase.html">TestKitBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/UITestKitBase.html">UITestKitBase</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/CALayer.html">CALayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UIApplication.html">UIApplication</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p><img src="https://github.com/intere/UITestKit/blob/master/Example/UITestKit/Media.xcassets/AppLogo.imageset/AppLogo.png?raw=true" width="150"></p>
+<h1 id='uitestkit' class='heading'>UITestKit</h1>
+<h3 id='an-ios-library-for-ui-testing' class='heading'>An iOS Library for UI Testing</h3>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li>UI Testing from a vanilla <code>XCTest</code> target
+
+<ul>
+<li>Enable / Disable UI Animations</li>
+<li>Take screenshots on test assertion failures</li>
+<li><code>waitForCondition</code> function to free up the UI thread and wait for your block condition to become true (or timeout and move on)</li>
+<li><code>pauseForUIDebug()</code> function to allow you to pause a (configurable) amount of time between steps in your tests
+
+<ul>
+<li>function becomes a no-op when <code>shouldPauseUI</code> is false (the default)</li>
+</ul></li>
+<li>variables to get you the top view controller</li>
+</ul></li>
+<li>Example App to demonstrate capabilities</li>
+</ul>
+
+<p><a href="https://travis-ci.org/intere/UITestKit"><img src="https://travis-ci.org/intere/UITestKit.svg?branch=develop" alt="Build Status"></a>
+<a href="https://intere.github.io/UITestKit/docs/index.html"><img src="https://cdn.rawgit.com/intere/UITestKit/master/docs/badge.svg" alt="Documentation"></a>
+<a href="http://cocoadocs.org/docsets/UITestKit"><img src="https://img.shields.io/badge/Platforms-iOS-lightgray.svg?style=flat" alt="Platform"></a>
+<a href="https://cocoapods.org/pods/UITestKit"><img src="https://img.shields.io/cocoapods/v/UITestKit.svg" alt="CocoaPods"></a><br>
+ <a href="https://cocoapods.org/pods/UITestKit"><img src="https://img.shields.io/cocoapods/dt/UITestKit.svg" alt="CocoaPods"></a> <a href="https://cocoapods.org/pods/UITestKit"><img src="https://img.shields.io/cocoapods/dm/UITestKit.svg" alt="CocoaPods"></a></p>
+<h2 id='why-not-use-xcuitests' class='heading'>Why not use XCUITests?</h2>
+
+<ul>
+<li>UITestKit lets you interact with the application code directly from test code
+
+<ul>
+<li>Easier mocking of model objects</li>
+<li>Easier invocation of ViewControllers</li>
+<li>Lower level access to your application</li>
+</ul></li>
+<li>UITestKit provides convenience variables for taking screenshots from failures</li>
+<li>UITestKit can be far less rigid than XCUITests</li>
+</ul>
+<h2 id='example' class='heading'>Example</h2>
+
+<p>To run the example project, clone the repo, and run <code>pod install</code> from the Example directory first.
+<img src="https://user-images.githubusercontent.com/2284832/50541549-86a3e080-0b65-11e9-95d2-176b9ce3164b.gif" alt="Example Tests"></p>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>iOS 9.0 or higher</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>UITestKit is available through <a href="http://cocoapods.org">CocoaPods</a>. To install
+it, simply add the following line to your Podfile:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'UITestKit'</span>
+</code></pre>
+<h3 id='code-examples' class='heading'>Code Examples</h3>
+<pre class="highlight swift"><code><span class="c1">///</span>
+
+</code></pre>
+<h3 id='best-practices' class='heading'>Best Practices</h3>
+
+<ul>
+<li>It is recommended to create a <code>BaseUITest</code> class that specializes <code><a href="Classes/UITestKitBase.html">UITestKitBase</a></code> and provides convenience variables for your application&rsquo;s view controllers:</li>
+</ul>
+<pre class="highlight swift"><code><span class="c1">/// Gets you the `SquareTabVC` if it's the topVC</span>
+<span class="k">var</span> <span class="nv">squareTabVC</span><span class="p">:</span> <span class="kt">SquareTabVC</span><span class="p">?</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">topVC</span> <span class="k">as?</span> <span class="kt">SquareTabVC</span>
+<span class="p">}</span>
+
+<span class="c1">/// Gets the `ShapesTableViewController`</span>
+<span class="k">var</span> <span class="nv">shapeTableVC</span><span class="p">:</span> <span class="kt">ShapesTableViewController</span><span class="p">?</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">topVC</span> <span class="k">as?</span> <span class="kt">ShapesTableViewController</span>
+<span class="p">}</span>
+</code></pre>
+
+<ul>
+<li>It is recommend that you use the screenshot capability when checking for specific UI&rsquo;s to be visible or in a specific UI state:</li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">XCTAssertTrue</span><span class="p">(</span><span class="nf">waitForCondition</span><span class="p">({</span> <span class="k">self</span><span class="o">.</span><span class="n">shapeTableVC</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">},</span> <span class="nv">timeout</span><span class="p">:</span> <span class="mi">1</span><span class="p">),</span> <span class="n">topVCScreenshot</span><span class="p">)</span>
+</code></pre>
+
+<p><code>topVCScreenshot</code> will produce failures like this:</p>
+
+<p><img src="https://user-images.githubusercontent.com/2284832/50541750-3a5a9f80-0b69-11e9-9a49-1b14615e0d33.png" alt="Sample Test Failure with Screenshot"></p>
+
+<p><code>The Screenshot that is produce will look something like the following:</code></p>
+
+<p><img src="https://user-images.githubusercontent.com/2284832/50541754-4f373300-0b69-11e9-9db8-f5f9e7a4b779.png" width="300"></p>
+<h2 id='author' class='heading'>Author</h2>
+
+<p><a href="https://github.com/intere">Eric Internicola</a> | <a href="https://intere.github.io/">Eric&rsquo;s Github Site</a></p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>UITestKit is available under the MIT license. See the <a href="https://raw.githubusercontent.com/intere/UITestKit/master/LICENSE">LICENSE file</a> for more info.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2017-2018 <a class="link" href="http://intere.github.io" target="_blank" rel="external">Eric Internicola</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

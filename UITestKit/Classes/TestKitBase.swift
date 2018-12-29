@@ -28,7 +28,7 @@ open class TestKitBase: XCTestCase {
         var done = false
         let startTime = NSDate()
         while !done {
-            RunLoop.current.run(mode: .defaultRunLoopMode, before: Date(timeIntervalSinceNow: 0.1))
+            RunLoop.current.run(mode: .default, before: Date(timeIntervalSinceNow: 0.1))
 
             done = condition()
             if done {

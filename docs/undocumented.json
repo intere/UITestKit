@@ -1,0 +1,12 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/einternicola/code/personal/UITestKit/UITestKit/Classes/UITestKitBase.swift",
+      "line": 12,
+      "symbol": "UITestKitBase",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/einternicola/code/personal/UITestKit"
+}
