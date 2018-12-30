@@ -120,7 +120,7 @@ XCTAssertTrue(waitForCondition({ self.shapeTableVC != nil }, timeout: 1), topVCS
 
 ![Sample Test Failure with Screenshot](https://user-images.githubusercontent.com/2284832/50541750-3a5a9f80-0b69-11e9-9a49-1b14615e0d33.png)
 
-`The Screenshot that is produce will look something like the following:`
+`The Screenshot that is produced will look something like the following:`
 
 <img src="https://user-images.githubusercontent.com/2284832/50541754-4f373300-0b69-11e9-9db8-f5f9e7a4b779.png" width="300">
 
