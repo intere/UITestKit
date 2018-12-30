@@ -48,7 +48,7 @@ pod 'UITestKit'
 ### Code Examples
 
 ```swift
-///
+/// Pre-test initialization
 override func setUp() {
     super.setUp()
     // Don't show view transitions - this will help prevent timing related failures
@@ -63,24 +63,36 @@ override func setUp() {
 ```
 
 ```swift
-XCTAssertTrue(waitForCondition({ self.mainVC != nil }, timeout: 3), topVCScreenshot)
-pauseForUIDebug()
-mainVC?.loadEmailLoginScreen()
+/// Tests logging in to the application
+func testLoginSuccess() {
 
-XCTAssertTrue(waitForCondition({ self.signInVC != nil}, timeout: 1), topVCScreenshot)
-pauseForUIDebug()
-
-if let emailText = signInVC?.emailText {
-    emailText.text = "user@domain.com"
+    // Verify that we're at the Main VC or fail and take a screenshot
+    XCTAssertTrue(waitForCondition({ self.mainVC != nil }, timeout: 3), topVCScreenshot)
     pauseForUIDebug()
-}
+    mainVC?.loadEmailLoginScreen()
 
-if let passwordText = signInVC?.passwordText {
-    passwordText.text = "UserPassword"
+    // Verify that we're at the Sign in VC or fail and take a screenshot
+    XCTAssertTrue(waitForCondition({ self.signInVC != nil}, timeout: 1), topVCScreenshot)
     pauseForUIDebug()
-}
 
-// ...
+    // Simulate typing email
+    if let emailText = signInVC?.emailText {
+        emailText.text = "user@domain.com"
+        pauseForUIDebug()
+    }
+
+    // simulate typing password
+    if let passwordText = signInVC?.passwordText {
+        passwordText.text = "UserPassword"
+        pauseForUIDebug()
+    }
+
+    // log in
+    signInVC?.login()
+
+    // Verify that we've signed in successfully and are at the Welcome VC or fail and take a screenshot
+    XCTAssertTrue(waitForCondition({ self.welcomeVC != nil}, timeout: 5), topVCScreenshot)
+}
 ```
 
 ### Best Practices

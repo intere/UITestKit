@@ -111,7 +111,7 @@ it, simply add the following line to your Podfile:</p>
 <pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'UITestKit'</span>
 </code></pre>
 <h3 id='code-examples' class='heading'>Code Examples</h3>
-<pre class="highlight swift"><code><span class="c1">///</span>
+<pre class="highlight swift"><code><span class="c1">/// Pre-test initialization</span>
 <span class="k">override</span> <span class="kd">func</span> <span class="nf">setUp</span><span class="p">()</span> <span class="p">{</span>
     <span class="k">super</span><span class="o">.</span><span class="nf">setUp</span><span class="p">()</span>
     <span class="c1">// Don't show view transitions - this will help prevent timing related failures</span>
@@ -124,24 +124,36 @@ it, simply add the following line to your Podfile:</p>
     <span class="c1">// Now do other setup tasks</span>
 <span class="p">}</span>
 </code></pre>
-<pre class="highlight swift"><code><span class="kt">XCTAssertTrue</span><span class="p">(</span><span class="nf">waitForCondition</span><span class="p">({</span> <span class="k">self</span><span class="o">.</span><span class="n">mainVC</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">},</span> <span class="nv">timeout</span><span class="p">:</span> <span class="mi">3</span><span class="p">),</span> <span class="n">topVCScreenshot</span><span class="p">)</span>
-<span class="nf">pauseForUIDebug</span><span class="p">()</span>
-<span class="n">mainVC</span><span class="p">?</span><span class="o">.</span><span class="nf">loadEmailLoginScreen</span><span class="p">()</span>
+<pre class="highlight swift"><code><span class="c1">/// Tests logging in to the application</span>
+<span class="kd">func</span> <span class="nf">testLoginSuccess</span><span class="p">()</span> <span class="p">{</span>
 
-<span class="kt">XCTAssertTrue</span><span class="p">(</span><span class="nf">waitForCondition</span><span class="p">({</span> <span class="k">self</span><span class="o">.</span><span class="n">signInVC</span> <span class="o">!=</span> <span class="kc">nil</span><span class="p">},</span> <span class="nv">timeout</span><span class="p">:</span> <span class="mi">1</span><span class="p">),</span> <span class="n">topVCScreenshot</span><span class="p">)</span>
-<span class="nf">pauseForUIDebug</span><span class="p">()</span>
-
-<span class="k">if</span> <span class="k">let</span> <span class="nv">emailText</span> <span class="o">=</span> <span class="n">signInVC</span><span class="p">?</span><span class="o">.</span><span class="n">emailText</span> <span class="p">{</span>
-    <span class="n">emailText</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">"user@domain.com"</span>
+    <span class="c1">// Verify that we're at the Main VC or fail and take a screenshot</span>
+    <span class="kt">XCTAssertTrue</span><span class="p">(</span><span class="nf">waitForCondition</span><span class="p">({</span> <span class="k">self</span><span class="o">.</span><span class="n">mainVC</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">},</span> <span class="nv">timeout</span><span class="p">:</span> <span class="mi">3</span><span class="p">),</span> <span class="n">topVCScreenshot</span><span class="p">)</span>
     <span class="nf">pauseForUIDebug</span><span class="p">()</span>
-<span class="p">}</span>
+    <span class="n">mainVC</span><span class="p">?</span><span class="o">.</span><span class="nf">loadEmailLoginScreen</span><span class="p">()</span>
 
-<span class="k">if</span> <span class="k">let</span> <span class="nv">passwordText</span> <span class="o">=</span> <span class="n">signInVC</span><span class="p">?</span><span class="o">.</span><span class="n">passwordText</span> <span class="p">{</span>
-    <span class="n">passwordText</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">"UserPassword"</span>
+    <span class="c1">// Verify that we're at the Sign in VC or fail and take a screenshot</span>
+    <span class="kt">XCTAssertTrue</span><span class="p">(</span><span class="nf">waitForCondition</span><span class="p">({</span> <span class="k">self</span><span class="o">.</span><span class="n">signInVC</span> <span class="o">!=</span> <span class="kc">nil</span><span class="p">},</span> <span class="nv">timeout</span><span class="p">:</span> <span class="mi">1</span><span class="p">),</span> <span class="n">topVCScreenshot</span><span class="p">)</span>
     <span class="nf">pauseForUIDebug</span><span class="p">()</span>
-<span class="p">}</span>
 
-<span class="c1">// ...</span>
+    <span class="c1">// Simulate typing email</span>
+    <span class="k">if</span> <span class="k">let</span> <span class="nv">emailText</span> <span class="o">=</span> <span class="n">signInVC</span><span class="p">?</span><span class="o">.</span><span class="n">emailText</span> <span class="p">{</span>
+        <span class="n">emailText</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">"user@domain.com"</span>
+        <span class="nf">pauseForUIDebug</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="c1">// simulate typing password</span>
+    <span class="k">if</span> <span class="k">let</span> <span class="nv">passwordText</span> <span class="o">=</span> <span class="n">signInVC</span><span class="p">?</span><span class="o">.</span><span class="n">passwordText</span> <span class="p">{</span>
+        <span class="n">passwordText</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">"UserPassword"</span>
+        <span class="nf">pauseForUIDebug</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="c1">// log in</span>
+    <span class="n">signInVC</span><span class="p">?</span><span class="o">.</span><span class="nf">login</span><span class="p">()</span>
+
+    <span class="c1">// Verify that we've signed in successfully and are at the Welcome VC or fail and take a screenshot</span>
+    <span class="kt">XCTAssertTrue</span><span class="p">(</span><span class="nf">waitForCondition</span><span class="p">({</span> <span class="k">self</span><span class="o">.</span><span class="n">welcomeVC</span> <span class="o">!=</span> <span class="kc">nil</span><span class="p">},</span> <span class="nv">timeout</span><span class="p">:</span> <span class="mi">5</span><span class="p">),</span> <span class="n">topVCScreenshot</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre>
 <h3 id='best-practices' class='heading'>Best Practices</h3>
 
