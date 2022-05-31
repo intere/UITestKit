@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UITestKit'
-  s.version          = '0.1.2'
+  s.version          = '0.2.0'
   s.summary          = 'Programmatic UI Tests (not using the Apple UI Test Framework).  XCTest-based tests.'
 
 # This description is used to generate tags and improve search results.
@@ -33,9 +33,9 @@ principle.
   s.social_media_url = 'https://twitter.com/intere'
 
   s.ios.deployment_target = '9.0'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 
-  s.source_files = 'UITestKit/**/*'
+  s.source_files = 'Sources/**/*'
   s.frameworks = 'XCTest'
 
 end

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		106A25421792E3B52DE3B9BBDCB080DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0053906DC63793F7F0D6BAA7879F1832 /* Foundation.framework */; };
-		15490A849E8C9B40DBCDFB43225AF6AF /* TestKitBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F72B9CCB847FE98D8803D80DFC5D28 /* TestKitBase.swift */; };
 		15B67951681FF39D7F560650B9F7C0CF /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199EEE973B19A8EA5E311496521DF450 /* Expression.swift */; };
 		1DCB3A431C615E46083BCA0EB8EA0EB3 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867F3DB95D33511543A89605BE5EC7AD /* Size.swift */; };
 		1DCDB45A5DFFB73C90EEAA14539775BA /* LayoutProxy+TypeErasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482F7479FD585CB342989FE75D42AE1 /* LayoutProxy+TypeErasure.swift */; };
@@ -17,6 +16,7 @@
 		2CCADE3FCDE0463AD7B49D2B0E307CBE /* LayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1734FF5A1C9C98CB77F64F2B8C73E76E /* LayoutSupport.swift */; };
 		33092C695BC7ECBD9958D66FF155855E /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7968DC036E8C4E8878F0D92C3212363 /* LayoutProxy.swift */; };
 		3810623383D9ACA3E9DB446922324695 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC67871F22EA8CF4CBD82757690B2786 /* Point.swift */; };
+		3887D35F390FBB835A37D71EB10A14DD /* UITestKitBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EA1E03E964B3D541828A84F0DD2C04 /* UITestKitBase.swift */; };
 		521F4BBD97016949EE837DBA74ED0026 /* AutoresizingMaskLayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C4F7C2CFC6B756BD01ADA30D10E4D3 /* AutoresizingMaskLayoutProxy.swift */; };
 		585720EA60D264C86E24F8CD67FEDA62 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C383C69A115553BA4674C10C022697AE /* Dimension.swift */; };
 		5A4FF91EDA4E0B9D55B3821E1F430244 /* LayoutSupportProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04233FBDD038B7BC2F5080467F3D8981 /* LayoutSupportProxy.swift */; };
@@ -25,7 +25,6 @@
 		6629F7257A5A7AEE8E0C47F0C01B8C2C /* LayoutGuideProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41EFEECCDC4845C950FDB89D2245B2A /* LayoutGuideProxy.swift */; };
 		6C2F82F89A8759D1981ABFD8036E0282 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA2FCB6DAB5A7B2B3B64E2B54AE7FE /* Property.swift */; };
 		6EAEAB12876192E8EDCA880EDCE8E17D /* Pods-UITestKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A930373698D809577757B88ECC972B3 /* Pods-UITestKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7635C43E5C83A9BF9A936EE18695DCF4 /* UITestKitBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698CBD3D88F15799BF6854C63FF0F829 /* UITestKitBase.swift */; };
 		828176C2A8FE402B08BB535A38AE9F7C /* Cartography-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C615964D65AC56E832A7EDEB94C08171 /* Cartography-dummy.m */; };
 		87BDAA1AF8730543593F4551EA513AA9 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727767E5FBD26E45EDC67A5C6A6A00B2 /* Context.swift */; };
 		89CEC33ED68A569FD847292F1139C531 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0053906DC63793F7F0D6BAA7879F1832 /* Foundation.framework */; };
@@ -35,17 +34,19 @@
 		AF9193D885D836E70D17733D2D35185D /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A482FE64E8586A10187466440953464 /* ConstraintGroup.swift */; };
 		B51533CA848EED082280551093DBE06B /* Distribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3491799A597595B405CC23E5D5452FA /* Distribute.swift */; };
 		B6C40BEB489490A804217777D376AD78 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56EA98129E650C81866A2F0C7D298E8 /* Extensions.swift */; };
+		B810E851CB39C76578683526FB9E3B03 /* UITestKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C4693BBADA21ECD0FAE9FF7C94AC3C /* UITestKit-dummy.m */; };
 		BA4CDF6377B9E4043910D50B37BAA5E1 /* LayoutItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC8B9109437AA36C5C693482D42670 /* LayoutItem.swift */; };
 		BF24609084483494C0E6056BD62684C8 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = A779E8C2903332F5F3C1E83C590337E5 /* Priority.swift */; };
 		C01F7C065BCC1859D5EF8194D09BC14E /* Pods-UITestKit_ExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 995E841677E5555D8CADE798F0B09F33 /* Pods-UITestKit_ExampleTests-dummy.m */; };
 		C41F79FE66EAACB87A9FFD548F7A2519 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE887C3930818A0B7A8E28E7D81F69C /* XCTest.framework */; };
 		CBC208DD619AF5EF0F9E070F28E4C860 /* ViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E1E804651155875EB2BCA1F2222EE3 /* ViewProxy.swift */; };
-		D418DB610A506442DFAB83134B2152A4 /* UITestKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF89E8028600944CAB60D0883EBF0DEA /* UITestKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD67D83581B5FFB54E870DA95F8E4894 /* UITestKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7CE166300FD3C985E20ED9C8F1D466 /* UITestKit.swift */; };
+		D418DB610A506442DFAB83134B2152A4 /* UITestKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF06EEFE3C8BA16FB257F54CCBC26256 /* UITestKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBB44F4B88DF30AD367EF358E3D31913 /* Pods-UITestKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CCBEE49FDCA623DFB98B2B3B956205 /* Pods-UITestKit_Example-dummy.m */; };
 		DD9D802B2C29F57409366594E0C067A4 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A29594EEB210ECBF59C4C50650DED7 /* Constraint.swift */; };
-		DD9E2B6F498B3CF1901E6C99161FF47A /* UITestKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9829194A6F777C84EB15ED6E33135C8 /* UITestKit-dummy.m */; };
 		DEB69C9AD367316811C2B36D5C245D9B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094D6DA59F514375C17C254517FF8001 /* View.swift */; };
 		E4360D8E68CDAD9D48E40AF1C49B9284 /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758FFC085525D020F544965853942A5 /* Coefficients.swift */; };
+		E61E809F5152C527D94D441D6FE6A93A /* TestKitBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6269B02DC8A67FADDD786F68FF8590A8 /* TestKitBase.swift */; };
 		EA0476907ECF715F12D6EAC530F25BB2 /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76A1542DD82BC0BAE07368FAB57AD36 /* Compound.swift */; };
 		FA05AA9FE282F7DD782546BE172554EB /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210964581FA3255EE7E7E9988FEC20F3 /* Align.swift */; };
 		FA8437658B7FB4C3F9EC7FE8885A9A4A /* Pods-UITestKit_ExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F023FD530F519379F0CD3C887BDB1E9E /* Pods-UITestKit_ExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -77,24 +78,36 @@
 
 /* Begin PBXFileReference section */
 		0053906DC63793F7F0D6BAA7879F1832 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		0314296140CB066AAD24010753CA8763 /* UITestKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = UITestKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		04233FBDD038B7BC2F5080467F3D8981 /* LayoutSupportProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutSupportProxy.swift; path = Cartography/LayoutSupportProxy.swift; sourceTree = "<group>"; };
+		04B488C695F93816BFC2406A2D8B3DAF /* UIApplication.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UIApplication.html; path = docs/docsets/GeoTrackKit.docset/Contents/Resources/Documents/Extensions/UIApplication.html; sourceTree = "<group>"; };
+		074F609F194BFCC0D5CBFA9795EA20F4 /* TestKitBase.html */ = {isa = PBXFileReference; includeInIndex = 1; name = TestKitBase.html; path = docs/docsets/GeoTrackKit.docset/Contents/Resources/Documents/Classes/TestKitBase.html; sourceTree = "<group>"; };
 		094D6DA59F514375C17C254517FF8001 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Cartography/View.swift; sourceTree = "<group>"; };
-		0AA0597C476F628D5C343F40B9F35F26 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0965E5461DF635FDC37393C8B4D10BD0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = docs/docsets/GeoTrackKit.docset/Contents/Info.plist; sourceTree = "<group>"; };
+		09770B0EB05EB61342B1C0B3F5538E6F /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/docsets/GeoTrackKit.docset/Contents/Resources/Documents/img/carat.png; sourceTree = "<group>"; };
+		0D25A51B57264BF70B0384D77BC6B81A /* CALayer.html */ = {isa = PBXFileReference; includeInIndex = 1; name = CALayer.html; path = docs/Extensions/CALayer.html; sourceTree = "<group>"; };
 		11D80DA598CC165BED45806576E35B3D /* Pods-UITestKit_ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UITestKit_ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1734FF5A1C9C98CB77F64F2B8C73E76E /* LayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutSupport.swift; path = Cartography/LayoutSupport.swift; sourceTree = "<group>"; };
+		193129A2337AFAABCE1825DE1C5228FA /* UITestKitBase.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UITestKitBase.html; path = docs/Classes/UITestKitBase.html; sourceTree = "<group>"; };
 		199EEE973B19A8EA5E311496521DF450 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Cartography/Expression.swift; sourceTree = "<group>"; };
+		19A075FA53C37D322839D2CEE882E2A2 /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Extensions.html; path = docs/docsets/GeoTrackKit.docset/Contents/Resources/Documents/Extensions.html; sourceTree = "<group>"; };
+		1B81688B449FEAC4CB3301C8BE6A77C7 /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/img/gh.png; sourceTree = "<group>"; };
 		1BD6DAD81AA4506B0C64A49D1F933F46 /* Constrain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrain.swift; path = Cartography/Constrain.swift; sourceTree = "<group>"; };
+		1D9D4B531A42BBAC17840DF418463CBA /* UITestKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UITestKit.xcconfig; sourceTree = "<group>"; };
 		2024DC37E8F97477BEE4232D871EB3AC /* Pods-UITestKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UITestKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		210964581FA3255EE7E7E9988FEC20F3 /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Cartography/Align.swift; sourceTree = "<group>"; };
+		24A74DA17FED2B25C7C47A3FDB187016 /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Extensions.html; path = docs/Extensions.html; sourceTree = "<group>"; };
 		295A8C56BA67F2946F57C2161472C97E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FE887C3930818A0B7A8E28E7D81F69C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		320DCA73FD5D3D04850B0309831FEF16 /* Pods-UITestKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UITestKit_Example-resources.sh"; sourceTree = "<group>"; };
 		34A025EB45ED95D0E99D97042CB7A5B4 /* Cartography-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-prefix.pch"; sourceTree = "<group>"; };
+		35EA1E03E964B3D541828A84F0DD2C04 /* UITestKitBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITestKitBase.swift; sourceTree = "<group>"; };
 		36CCBEE49FDCA623DFB98B2B3B956205 /* Pods-UITestKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UITestKit_Example-dummy.m"; sourceTree = "<group>"; };
 		3B65BA4369FFFEAA495F3367152F2ACC /* LayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutGuide.swift; path = Cartography/LayoutGuide.swift; sourceTree = "<group>"; };
 		3C1510701085472F0F5187392B8C9575 /* Pods-UITestKit_ExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UITestKit_ExampleTests.modulemap"; sourceTree = "<group>"; };
-		45DFBDF0B79886D19FBAA164EB49B30A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3F3FED5CB4B64B829DEF1D8982C46DCB /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/img/carat.png; sourceTree = "<group>"; };
+		4071AE973307544ADD04F0C000896651 /* Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Classes.html; path = docs/Classes.html; sourceTree = "<group>"; };
+		47B44174E3B73CD1CC6284966275BDB3 /* undocumented.json */ = {isa = PBXFileReference; includeInIndex = 1; name = undocumented.json; path = docs/undocumented.json; sourceTree = "<group>"; };
+		49EB47E2784E8FCD540EB151B7A30E18 /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/docsets/GeoTrackKit.docset/Contents/Resources/Documents/search.json; sourceTree = "<group>"; };
 		4A930373698D809577757B88ECC972B3 /* Pods-UITestKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UITestKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		4C168CAFE977588775719E37F3EC303D /* Pods-UITestKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UITestKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4CBA2FCB6DAB5A7B2B3B64E2B54AE7FE /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Cartography/Property.swift; sourceTree = "<group>"; };
@@ -102,29 +115,42 @@
 		55027E060D01A3A6B1E7DE40622F7C99 /* Cartography.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cartography.modulemap; sourceTree = "<group>"; };
 		562EC227D27B6D335C305B445FD9C6EF /* Pods-UITestKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UITestKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		576D97D4AA04D79F3795F5E1F2C499D5 /* Pods-UITestKit_ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UITestKit_ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D95C442F5B558267E7099BFA8480111 /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/docsets/GeoTrackKit.docset/Contents/Resources/Documents/img/gh.png; sourceTree = "<group>"; };
 		5F0AF3A34995414A6C6BE6F45056D3A3 /* Pods-UITestKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UITestKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6620D4F93D5738EB23BB841A75F8B914 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6269B02DC8A67FADDD786F68FF8590A8 /* TestKitBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestKitBase.swift; sourceTree = "<group>"; };
 		67823B03B2BEEB734681B5680D05DC90 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		698CBD3D88F15799BF6854C63FF0F829 /* UITestKitBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITestKitBase.swift; path = UITestKit/Classes/UITestKitBase.swift; sourceTree = "<group>"; };
+		69C135D6C50B9090CA7EDBD2674005FA /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/docsets/GeoTrackKit.docset/Contents/Resources/Documents/css/highlight.css; sourceTree = "<group>"; };
+		6A5943F55859C01B4D23D53DDCE5C354 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		727767E5FBD26E45EDC67A5C6A6A00B2 /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Cartography/Context.swift; sourceTree = "<group>"; };
 		7379F1F3059D356DC3543351168B431B /* UITestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UITestKit.framework; path = UITestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76016521704AD14A939D3143333C8164 /* Pods-UITestKit_ExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UITestKit_ExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7A503933409565AF84F34B3E4BDE1741 /* UITestKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UITestKit.modulemap; sourceTree = "<group>"; };
+		844A2E3AD94C24D3B75B62FC4D2B8B23 /* CALayer.html */ = {isa = PBXFileReference; includeInIndex = 1; name = CALayer.html; path = docs/docsets/GeoTrackKit.docset/Contents/Resources/Documents/Extensions/CALayer.html; sourceTree = "<group>"; };
 		8482F7479FD585CB342989FE75D42AE1 /* LayoutProxy+TypeErasure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LayoutProxy+TypeErasure.swift"; path = "Cartography/LayoutProxy+TypeErasure.swift"; sourceTree = "<group>"; };
 		85961AFC3B36340E16F949316B72244F /* Pods-UITestKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UITestKit_Example.modulemap"; sourceTree = "<group>"; };
 		867F3DB95D33511543A89605BE5EC7AD /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Cartography/Size.swift; sourceTree = "<group>"; };
+		876646DE0DD259C4A0E443F4E31E5DDE /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/search.json; sourceTree = "<group>"; };
 		88E7AEB45BC7F0A9CA2993BD511048E9 /* Cartography-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-umbrella.h"; sourceTree = "<group>"; };
 		8CF36C64A0BA6B77E8199DBBC85BA120 /* Pods-UITestKit_ExampleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UITestKit_ExampleTests-frameworks.sh"; sourceTree = "<group>"; };
+		8D7CE166300FD3C985E20ED9C8F1D466 /* UITestKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITestKit.swift; path = Sources/UITestKit/UITestKit.swift; sourceTree = "<group>"; };
 		90CF694DE1A15D2F28414119E6F7CFF5 /* Pods_UITestKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UITestKit_Example.framework; path = "Pods-UITestKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D48DFDBDF4DC62E3475EC58BD2AD3B /* Cartography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cartography.framework; path = Cartography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9337DC605F5E9E2566D23193E53D3B4F /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/index.html; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96E1E804651155875EB2BCA1F2222EE3 /* ViewProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewProxy.swift; path = Cartography/ViewProxy.swift; sourceTree = "<group>"; };
-		96F72B9CCB847FE98D8803D80DFC5D28 /* TestKitBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestKitBase.swift; path = UITestKit/Classes/TestKitBase.swift; sourceTree = "<group>"; };
 		995E841677E5555D8CADE798F0B09F33 /* Pods-UITestKit_ExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UITestKit_ExampleTests-dummy.m"; sourceTree = "<group>"; };
+		997D0889FD70BCD662B6F93D3D7C97B8 /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/js/jquery.min.js; sourceTree = "<group>"; };
 		9A482FE64E8586A10187466440953464 /* ConstraintGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintGroup.swift; path = Cartography/ConstraintGroup.swift; sourceTree = "<group>"; };
+		9D3AC76056A9A7750C134B40AF47A730 /* Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Classes.html; path = docs/docsets/GeoTrackKit.docset/Contents/Resources/Documents/Classes.html; sourceTree = "<group>"; };
 		A3491799A597595B405CC23E5D5452FA /* Distribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distribute.swift; path = Cartography/Distribute.swift; sourceTree = "<group>"; };
+		A493D83C7C2A01894F29B168038E5734 /* docSet.dsidx */ = {isa = PBXFileReference; includeInIndex = 1; name = docSet.dsidx; path = docs/docsets/GeoTrackKit.docset/Contents/Resources/docSet.dsidx; sourceTree = "<group>"; };
 		A779E8C2903332F5F3C1E83C590337E5 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Cartography/Priority.swift; sourceTree = "<group>"; };
-		AF89E8028600944CAB60D0883EBF0DEA /* UITestKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITestKit-umbrella.h"; sourceTree = "<group>"; };
+		A8D3A750E03BFD38906264B3B330B4EB /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/docsets/GeoTrackKit.docset/Contents/Resources/Documents/css/jazzy.css; sourceTree = "<group>"; };
+		AB821EEBCBF0E627982F79F5AFFA7C23 /* UIApplication.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UIApplication.html; path = docs/Extensions/UIApplication.html; sourceTree = "<group>"; };
+		B2150C5B4F4260DC107CA28445ACEA4F /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/docsets/GeoTrackKit.docset/Contents/Resources/Documents/js/jazzy.js; sourceTree = "<group>"; };
+		B69342528313154DFB5DF42538B8920B /* UITestKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITestKit-prefix.pch"; sourceTree = "<group>"; };
+		BB4D704C8AF1204527247DD4D91CEE90 /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/docsets/GeoTrackKit.docset/Contents/Resources/Documents/img/dash.png; sourceTree = "<group>"; };
+		BE9131453DF300CA55BEA8CA6995F5AE /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/img/dash.png; sourceTree = "<group>"; };
+		C047AB9AA150B5A636F9659491E239B8 /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/css/jazzy.css; sourceTree = "<group>"; };
 		C383C69A115553BA4674C10C022697AE /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dimension.swift; path = Cartography/Dimension.swift; sourceTree = "<group>"; };
 		C41EFEECCDC4845C950FDB89D2245B2A /* LayoutGuideProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutGuideProxy.swift; path = Cartography/LayoutGuideProxy.swift; sourceTree = "<group>"; };
 		C43A8F26CD3F741278882FFD853D4A83 /* Pods-UITestKit_ExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UITestKit_ExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -132,19 +158,30 @@
 		C615964D65AC56E832A7EDEB94C08171 /* Cartography-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cartography-dummy.m"; sourceTree = "<group>"; };
 		C85120BFEF4EEF3F6E807DA260CB68CD /* Edges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edges.swift; path = Cartography/Edges.swift; sourceTree = "<group>"; };
 		C8AC8B9109437AA36C5C693482D42670 /* LayoutItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutItem.swift; path = Cartography/LayoutItem.swift; sourceTree = "<group>"; };
+		C9E4D0C06D6CC44BE8782650FE5B7656 /* UITestKitBase.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UITestKitBase.html; path = docs/docsets/GeoTrackKit.docset/Contents/Resources/Documents/Classes/UITestKitBase.html; sourceTree = "<group>"; };
+		CB2874169834F5589DE6A0E0FD106BE6 /* UITestKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UITestKit.modulemap; sourceTree = "<group>"; };
+		CD13466F2945068EB77E7289BE4E051C /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/js/jazzy.js; sourceTree = "<group>"; };
+		D3CFA9E0B0AE3DEC0052064E88C9CD73 /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/docsets/GeoTrackKit.docset/Contents/Resources/Documents/js/jquery.min.js; sourceTree = "<group>"; };
 		D5C4F7C2CFC6B756BD01ADA30D10E4D3 /* AutoresizingMaskLayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoresizingMaskLayoutProxy.swift; path = Cartography/AutoresizingMaskLayoutProxy.swift; sourceTree = "<group>"; };
+		D5E2C12022EC0B072CE5896D0551020C /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/css/highlight.css; sourceTree = "<group>"; };
 		D758FFC085525D020F544965853942A5 /* Coefficients.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coefficients.swift; path = Cartography/Coefficients.swift; sourceTree = "<group>"; };
 		D8A29594EEB210ECBF59C4C50650DED7 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Cartography/Constraint.swift; sourceTree = "<group>"; };
-		D9829194A6F777C84EB15ED6E33135C8 /* UITestKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITestKit-dummy.m"; sourceTree = "<group>"; };
+		DA03FB9A00C6AE639174DDD3552A3DBD /* GeoTrackKit.tgz */ = {isa = PBXFileReference; includeInIndex = 1; name = GeoTrackKit.tgz; path = docs/docsets/GeoTrackKit.tgz; sourceTree = "<group>"; };
 		DC67871F22EA8CF4CBD82757690B2786 /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Cartography/Point.swift; sourceTree = "<group>"; };
+		DE3B741416C9D9575C98DB30B1E1093C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DF06EEFE3C8BA16FB257F54CCBC26256 /* UITestKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITestKit-umbrella.h"; sourceTree = "<group>"; };
+		DF0CDA0C92F0542690FD656776B10BBB /* UITestKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = UITestKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E5112DEC1E1D7E24CF6AA857F2A91433 /* TestKitBase.html */ = {isa = PBXFileReference; includeInIndex = 1; name = TestKitBase.html; path = docs/Classes/TestKitBase.html; sourceTree = "<group>"; };
+		E62C3A9B2693E78D795F9FBDDF482123 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6BA181707478CB60A6948F09B3F737A /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/docsets/GeoTrackKit.docset/Contents/Resources/Documents/index.html; sourceTree = "<group>"; };
 		E6D67451F8C0F52563E93B669CA458AF /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = Cartography/Edge.swift; sourceTree = "<group>"; };
 		E76A1542DD82BC0BAE07368FAB57AD36 /* Compound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compound.swift; path = Cartography/Compound.swift; sourceTree = "<group>"; };
 		E9D0A7CF55A29E75B8F29E776EC62DEE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE72748FB8ADC78CE571F4A1E194F82F /* Pods-UITestKit_ExampleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UITestKit_ExampleTests-resources.sh"; sourceTree = "<group>"; };
 		F023FD530F519379F0CD3C887BDB1E9E /* Pods-UITestKit_ExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UITestKit_ExampleTests-umbrella.h"; sourceTree = "<group>"; };
-		F0DFD5281669EBF25FD41612AF5A3428 /* UITestKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UITestKit.xcconfig; sourceTree = "<group>"; };
 		F1D2DE14344770C827DA728B5DAF8006 /* Pods_UITestKit_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UITestKit_ExampleTests.framework; path = "Pods-UITestKit_ExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F24AC1129283470EA5A8DA765F27FD74 /* UITestKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITestKit-prefix.pch"; sourceTree = "<group>"; };
+		F2F6C401BA3615C36AC15F836E814A41 /* badge.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = badge.svg; path = docs/badge.svg; sourceTree = "<group>"; };
+		F3C4693BBADA21ECD0FAE9FF7C94AC3C /* UITestKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITestKit-dummy.m"; sourceTree = "<group>"; };
 		F7968DC036E8C4E8878F0D92C3212363 /* LayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Cartography/LayoutProxy.swift; sourceTree = "<group>"; };
 		FEF4421C61BA072E20936502B28B96EA /* Pods-UITestKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UITestKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,6 +223,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A383498F9706036E92AA16022F042C0 /* UITestKit */ = {
+			isa = PBXGroup;
+			children = (
+				8D7CE166300FD3C985E20ED9C8F1D466 /* UITestKit.swift */,
+				718F0B81946DF896749588EF02D35203 /* Classes */,
+				E6F1B8E31DD13DDCCF1A801E78FAECE7 /* Pod */,
+				6DB5D5181A5CB8B4C9EE8541CBFF8423 /* Support Files */,
+			);
+			name = UITestKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		249B8740F851411FECBCD256BE734EFA /* Cartography */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,26 +288,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4DC55FAE49A8E1A62FCB173D960D3938 /* Support Files */ = {
+		693308B62932FFCE4119B8B8FE1A3D84 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6620D4F93D5738EB23BB841A75F8B914 /* Info.plist */,
-				7A503933409565AF84F34B3E4BDE1741 /* UITestKit.modulemap */,
-				F0DFD5281669EBF25FD41612AF5A3428 /* UITestKit.xcconfig */,
-				D9829194A6F777C84EB15ED6E33135C8 /* UITestKit-dummy.m */,
-				F24AC1129283470EA5A8DA765F27FD74 /* UITestKit-prefix.pch */,
-				AF89E8028600944CAB60D0883EBF0DEA /* UITestKit-umbrella.h */,
+				0A383498F9706036E92AA16022F042C0 /* UITestKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6DB5D5181A5CB8B4C9EE8541CBFF8423 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E62C3A9B2693E78D795F9FBDDF482123 /* Info.plist */,
+				CB2874169834F5589DE6A0E0FD106BE6 /* UITestKit.modulemap */,
+				1D9D4B531A42BBAC17840DF418463CBA /* UITestKit.xcconfig */,
+				F3C4693BBADA21ECD0FAE9FF7C94AC3C /* UITestKit-dummy.m */,
+				B69342528313154DFB5DF42538B8920B /* UITestKit-prefix.pch */,
+				DF06EEFE3C8BA16FB257F54CCBC26256 /* UITestKit-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/UITestKit";
 			sourceTree = "<group>";
 		};
-		693308B62932FFCE4119B8B8FE1A3D84 /* Development Pods */ = {
+		718F0B81946DF896749588EF02D35203 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8BDED338C842A56A10AFCDFF20AC4B1E /* UITestKit */,
+				6269B02DC8A67FADDD786F68FF8590A8 /* TestKitBase.swift */,
+				35EA1E03E964B3D541828A84F0DD2C04 /* UITestKitBase.swift */,
 			);
-			name = "Development Pods";
+			name = Classes;
+			path = Sources/UITestKit/Classes;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -289,28 +348,6 @@
 			);
 			name = "Pods-UITestKit_ExampleTests";
 			path = "Target Support Files/Pods-UITestKit_ExampleTests";
-			sourceTree = "<group>";
-		};
-		8BDED338C842A56A10AFCDFF20AC4B1E /* UITestKit */ = {
-			isa = PBXGroup;
-			children = (
-				96F72B9CCB847FE98D8803D80DFC5D28 /* TestKitBase.swift */,
-				698CBD3D88F15799BF6854C63FF0F829 /* UITestKitBase.swift */,
-				ABA264C3704C82EE2BAD591B29756A28 /* Pod */,
-				4DC55FAE49A8E1A62FCB173D960D3938 /* Support Files */,
-			);
-			name = UITestKit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		ABA264C3704C82EE2BAD591B29756A28 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				0AA0597C476F628D5C343F40B9F35F26 /* LICENSE */,
-				45DFBDF0B79886D19FBAA164EB49B30A /* README.md */,
-				0314296140CB066AAD24010753CA8763 /* UITestKit.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		B6320E9B46E59E5BFDBBFFDAA850FBFC /* Pods-UITestKit_Example */ = {
@@ -352,6 +389,51 @@
 				2FE887C3930818A0B7A8E28E7D81F69C /* XCTest.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		E6F1B8E31DD13DDCCF1A801E78FAECE7 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F2F6C401BA3615C36AC15F836E814A41 /* badge.svg */,
+				844A2E3AD94C24D3B75B62FC4D2B8B23 /* CALayer.html */,
+				0D25A51B57264BF70B0384D77BC6B81A /* CALayer.html */,
+				09770B0EB05EB61342B1C0B3F5538E6F /* carat.png */,
+				3F3FED5CB4B64B829DEF1D8982C46DCB /* carat.png */,
+				9D3AC76056A9A7750C134B40AF47A730 /* Classes.html */,
+				4071AE973307544ADD04F0C000896651 /* Classes.html */,
+				BB4D704C8AF1204527247DD4D91CEE90 /* dash.png */,
+				BE9131453DF300CA55BEA8CA6995F5AE /* dash.png */,
+				A493D83C7C2A01894F29B168038E5734 /* docSet.dsidx */,
+				24A74DA17FED2B25C7C47A3FDB187016 /* Extensions.html */,
+				19A075FA53C37D322839D2CEE882E2A2 /* Extensions.html */,
+				DA03FB9A00C6AE639174DDD3552A3DBD /* GeoTrackKit.tgz */,
+				5D95C442F5B558267E7099BFA8480111 /* gh.png */,
+				1B81688B449FEAC4CB3301C8BE6A77C7 /* gh.png */,
+				69C135D6C50B9090CA7EDBD2674005FA /* highlight.css */,
+				D5E2C12022EC0B072CE5896D0551020C /* highlight.css */,
+				9337DC605F5E9E2566D23193E53D3B4F /* index.html */,
+				E6BA181707478CB60A6948F09B3F737A /* index.html */,
+				0965E5461DF635FDC37393C8B4D10BD0 /* Info.plist */,
+				C047AB9AA150B5A636F9659491E239B8 /* jazzy.css */,
+				A8D3A750E03BFD38906264B3B330B4EB /* jazzy.css */,
+				B2150C5B4F4260DC107CA28445ACEA4F /* jazzy.js */,
+				CD13466F2945068EB77E7289BE4E051C /* jazzy.js */,
+				997D0889FD70BCD662B6F93D3D7C97B8 /* jquery.min.js */,
+				D3CFA9E0B0AE3DEC0052064E88C9CD73 /* jquery.min.js */,
+				DE3B741416C9D9575C98DB30B1E1093C /* LICENSE */,
+				6A5943F55859C01B4D23D53DDCE5C354 /* README.md */,
+				49EB47E2784E8FCD540EB151B7A30E18 /* search.json */,
+				876646DE0DD259C4A0E443F4E31E5DDE /* search.json */,
+				E5112DEC1E1D7E24CF6AA857F2A91433 /* TestKitBase.html */,
+				074F609F194BFCC0D5CBFA9795EA20F4 /* TestKitBase.html */,
+				AB821EEBCBF0E627982F79F5AFFA7C23 /* UIApplication.html */,
+				04B488C695F93816BFC2406A2D8B3DAF /* UIApplication.html */,
+				DF0CDA0C92F0542690FD656776B10BBB /* UITestKit.podspec */,
+				193129A2337AFAABCE1825DE1C5228FA /* UITestKitBase.html */,
+				C9E4D0C06D6CC44BE8782650FE5B7656 /* UITestKitBase.html */,
+				47B44174E3B73CD1CC6284966275BDB3 /* undocumented.json */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		F1095EF72FE0E7614BB4F37C5728BEFF /* Products */ = {
@@ -435,7 +517,7 @@
 			buildConfigurationList = 4F836D52B6D66AD2E3A628C50E2B2551 /* Build configuration list for PBXNativeTarget "UITestKit" */;
 			buildPhases = (
 				E08A546FCD936BC9C1B4A808BC84252B /* Headers */,
-				6D8392B0B1A1A8136B55187109614644 /* Sources */,
+				AB7A8AACCA4E77729DFFFB35CFF653A1 /* Sources */,
 				38ABD91CAB9FED509359A1F9AFE28CF4 /* Frameworks */,
 				7F0C820DC75551EE200E7BF82AA7F9AF /* Resources */,
 			);
@@ -582,21 +664,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D8392B0B1A1A8136B55187109614644 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				15490A849E8C9B40DBCDFB43225AF6AF /* TestKitBase.swift in Sources */,
-				DD9E2B6F498B3CF1901E6C99161FF47A /* UITestKit-dummy.m in Sources */,
-				7635C43E5C83A9BF9A936EE18695DCF4 /* UITestKitBase.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9BAA292F21D16F275D38F0BA7801E045 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DBB44F4B88DF30AD367EF358E3D31913 /* Pods-UITestKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7A8AACCA4E77729DFFFB35CFF653A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E61E809F5152C527D94D441D6FE6A93A /* TestKitBase.swift in Sources */,
+				B810E851CB39C76578683526FB9E3B03 /* UITestKit-dummy.m in Sources */,
+				CD67D83581B5FFB54E870DA95F8E4894 /* UITestKit.swift in Sources */,
+				3887D35F390FBB835A37D71EB10A14DD /* UITestKitBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,7 +717,7 @@
 /* Begin XCBuildConfiguration section */
 		2717B13A65DD21331063A5FD848472E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0DFD5281669EBF25FD41612AF5A3428 /* UITestKit.xcconfig */;
+			baseConfigurationReference = 1D9D4B531A42BBAC17840DF418463CBA /* UITestKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -890,7 +973,7 @@
 		};
 		71BD22C6DC5D284A702E5715B60B6001 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0DFD5281669EBF25FD41612AF5A3428 /* UITestKit.xcconfig */;
+			baseConfigurationReference = 1D9D4B531A42BBAC17840DF418463CBA /* UITestKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

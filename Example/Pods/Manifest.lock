@@ -1,13 +1,13 @@
 PODS:
   - Cartography (3.1.0)
-  - UITestKit (0.1.1)
+  - UITestKit (0.1.2)
 
 DEPENDENCIES:
   - Cartography
   - UITestKit (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Cartography
 
 EXTERNAL SOURCES:
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Cartography: 1988b7578871a56c036e7af17195cb2190edf18c
-  UITestKit: bb1fc2eb0cf68f54145826cc9f65a86d3ccd683d
+  UITestKit: 961d46ec562e31a3dcb6bf716a301a65562c0c3b
 
 PODFILE CHECKSUM: 767b758c16fb4cf2962148df30d47e64acddfa07
 
