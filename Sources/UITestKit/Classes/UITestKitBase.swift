@@ -5,6 +5,7 @@
 //  Created by Eric Internicola on 11/5/17.
 //
 
+#if targetEnvironment(macCatalyst) || os(iOS)
 import Foundation
 import UIKit
 import XCTest
@@ -169,3 +170,5 @@ extension CALayer {
         return screenshot
     }
 }
+
+#endif
